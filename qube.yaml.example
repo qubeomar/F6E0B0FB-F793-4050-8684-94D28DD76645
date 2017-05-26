@@ -1,26 +1,26 @@
-id: 27a7c8ac-9712-4d93-a0eb-6a1be9a5a87b
-version: v2
-name: HyunjiTester0503
-apptype: api
-language: java
-containerName: hyunjitester0503
+id: 'ddeb59f5-4491-4d43-8542-496309bf5072'
+version: 'v2'
+name: 'Test'
+apptype: 'api'
+language: 'java'
+containerName: 'test'
 toolchain:
-  id: 5908cf49d1a47f002010b95d
-  name: Qubeship-Java-Toolchain
+  id: '591a283af62d42001ef994b3'
+  name: 'Qubeship-Python-Toolchain'
 opinion:
-  id: 5908cf7dacfc9a000b226a5f
-  name: Qubeship default opinion
+  id: '591a283b8d0cb2000bae9dd9'
+  name: 'Qubeship default opinion'
 endpoint:
-  id: 5908cf49168303000bee528c
-  name: Qubeship Sandbox Cluster
-  type: target
+  id: '591a283b2a0603000bebf584'
+  name: 'Qubeship Sandbox Cluster'
+  type: 'target'
 variables:
-  - name: APP_VERSION
-    value: v0.1
+- name: 'APP_VERSION'
+  value: 'v0.1'
 build:
   compile:
     publish:
-     - target/
+    - target/
 bake:
   skip: false
 test:
@@ -29,4 +29,3 @@ deploy_to_qa:
   skip: true
 deploy_to_prod:
   skip: false
-
