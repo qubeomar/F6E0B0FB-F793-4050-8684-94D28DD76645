@@ -1,0 +1,32 @@
+id: 10294cfa-5306-469a-b81b-f907802c83ae
+version: v2
+name: QubeFirstJavaProject
+apptype: api
+language: java
+containerName: qubefirstjavaproject
+toolchain:
+  id: 58e56a68acac5a0020e2b930
+  name: Qubeship-Java-Toolchain
+opinion:
+  id: 58e5596a13d0cc000e88a95d
+  name: Qubeship default opinion
+endpoint:
+  id: 
+  name: Default Endpoint
+  type: 
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - target/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
